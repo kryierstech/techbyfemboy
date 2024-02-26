@@ -1,11 +1,70 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --bg-color-1: #0f1526;
+  --bg-color-2: #1c233e;
+  --star-color: #fff;
+  --star-size: 1px;
+  --star-count: 500;
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
-  background-color: #f5f5f5;
   display: flex;
-  justify
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, var(--bg-color-1), var(--bg-color-2));
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: var(--star-color);
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.link {
+  display: block;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--star-color);
+  color: var(--bg-color-1);
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.link:hover {
+  background-color: var(--bg-color-2);
+}
+
+.about {
+  font-size: 1.2rem;
+  color: var(--star-color);
+  margin-top: 2rem;
+}
+
+@keyframes falling-star {
+  0% {
+    transform: translateY(-100%) rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(100%) rotate(360deg);
+    opacity: 1;
+  }
+}
+
+@for $i from 1 through var(--star-count
