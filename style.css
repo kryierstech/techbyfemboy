@@ -1,53 +1,67 @@
 body {
-	background: linear-gradient(135deg, #8e2de2 0%, #4a00e0 100%);
-	font-family: 'Product Sans', sans-serif;
-	color: #ffffff;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-	margin: 0;
+  font-family: 'Product Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #3f0071, #1a0036);
+  background-size: cover;
+  background-position: center;
 }
 
 .container {
-	text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.title {
-	font-size: 2.5em;
-	margin-bottom: 1em;
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #3f0071;
 }
 
-.link {
-	display: block;
-	width: 200px;
-	height: 50px;
-	line-height: 50px;
-	margin: 0 auto 1em auto;
-	border-radius: 5px;
-	background-color: rgba(255, 255, 255, 0.1);
-	color: #ffffff;
-	text-decoration: none;
-	font-size: 1.2em;
-	transition: background-color 0.3s ease;
+p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #3f0071;
 }
 
-.link:hover {
-	background-color: rgba(255, 255, 255, 0.2);
+.portfolio {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
 }
 
-.button {
-	display: inline-block;
-	padding: 10px 20px;
-	margin: 10px;
-	border-radius: 5px;
-	background-color: #4CAF50;
-	color: #ffffff;
-	text-decoration: none;
-	font-size: 1.2em;
-	transition: background-color 0.3s ease;
+.portfolio-link {
+  width: 80px;
+  height: 80px;
+  margin: 0 1rem;
+  border-radius: 50%;
+  color: #3f0071;
+  font-size: 1.5rem;
+  line-height: 80px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.button:hover {
-	background-color: #3e8e41;
+.kryiers-star {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}.kryiers-star a {
+  color: #3f0071;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 100px;
 }
